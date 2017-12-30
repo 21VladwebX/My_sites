@@ -1,0 +1,76 @@
+.center_magic{
+	min-width: 10px;
+	min-height: 10px;
+	background-color: #3F3FED;
+}
+
+#center_magic{
+	min-width: 10px;
+	min-height: 10px;
+	background-color: #3F3FED;
+	animation: clor 20s infinite ;
+	margin: 0 auto;
+}
+
+@keyframes clor {
+	0%   {background-color:red; }
+    25%  {background-color:yellow; }
+    50%  {background-color:blue; }
+    75%  {background-color:green; }
+    100% {background-color:red; }
+}
+.hop{
+	height: 40%;
+	/* min-width: 400 %; */
+	background: red;
+	margin: 0 auto;
+	/* padding: 30%; */
+	
+}
+.flash{
+	max-width: 60%;
+	max-height: 60%;
+	display: flex;
+	border: 2px solid red;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.flash .div_flash{
+	width: 40px;
+	height: 40px;
+	background: #5168D7;
+	margin: 2px;			/*!!!!!!   -2px*/
+	
+	
+}
+.flash .active_flash{
+	background:	#287B8A;
+	transition: background 1s;
+	border: 1px outset #79A7AA;
+	
+	
+}
+.strawberry{
+	border-radius: 4px;
+	width: 50px;
+	height: 20px;
+	background: #CC0225;
+	/* position: absolsute; */
+	transition: display 1s;
+	margin: 0 auto;
+}
+
+.strawberry:hover{
+	opacity: 0.6;	
+	/* display: none; */
+	
+}
+
+#center_magic img{
+	width: 30%;
+	height: 50%;
+	border-radius: 4px;
+}

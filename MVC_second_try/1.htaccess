@@ -1,0 +1,5 @@
+AddDefaultCharset utf-8
+
+RewriteEngine on
+RewriteBase /MVC_second_try/
+RewriteRule ^{.*}$ index.php

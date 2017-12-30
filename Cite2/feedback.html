@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Обратная связь</title>
+	<meta http-equiv = "Content-type" type = "text/html" charset = "utf-8" />
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = yes"/>
+	<link rel = "stylesheet" type = "text/css" href = "css/css_feedback.css">
+	<script type = "text/javascript" src = "js/jquery-3.1.1.min.js"></script>
+	<script type = "text/javascript" src = "js/scripts/check_for_feedback.js"></script>
+	<script src = "js/scripts/js_for_mainMenu.js"></script>
+</head>
+<body >
+
+	<header> 
+		<div id = "MainWord">
+			<a href = "index.html" >				
+				<img src = "img/img/avto_1.jpg" title = "Avto img" alt = "Машинка">				
+			</a>
+		</div>
+		<div id = "other">
+			<a href = "" >
+				<span class = "reg"> Регистрация </span></a>
+			|
+			<a href = "">
+				<span class = "auth"> Войти </span>
+			</a>
+		</div>
+	</header>
+	<main>
+		<div id = "Menu">
+		<ul id = "mainMenu" >
+			<li> <a  href = "#"> Avto</a>
+				<ul>
+					<li> <a href = "#"> Audi </a> </li>
+					<li> <a href = "#"> BMW </a> </li>
+					<li> <a href = "#"> Subaru </a> 
+						<ul>
+							<li> <a href = "#"> Impreza</a> </li>
+							<li> <a href = "#"> Forester</a> </li>
+							<li> <a href = "#"> Legacy</a> </li>
+						</ul>
+					
+					</li>
+				</ul>
+			</li>
+			<li> <a  href = "#"> Moto</a></li>
+			<li> <a  href = "#"> Score</a></li>
+		</ul >		
+		</div>
+		<div id = "leftCol">
+			<div = "menu">
+				<a href = "galery.html"> Галерея </a> <br />
+				<a href = "feedback.html"> Обратная связь </a> <br />
+				<a href = "about_us.html"> О нас </a> <br />
+			</div>
+		</div>
+		<div id = "clear">
+		</div>
+		<div id = "centralBlok">
+			<div id = "formSmall">
+				<form action = "" method = "POST" >  				
+					<label>Имя:</label><br/>
+					<input name = "name" type = "text" id = "name" placeholder = "Введите имя" required><br/>
+					<label>Ваш e-mail:</label><br/>
+					<input name = "e-mail" type = "text" id = "e-mail" placeholder = "Введите ваш e-mail" required><br/>
+					<label>Тема сообщения:</label><br/>
+					<input name = "subject" type = "text" id = "subject" placeholder = "Введите тему сообщения" required><br/>
+					<label>Сообщения:</label><br/>
+					<textarea name = "message" type = "text" id = "message" placeholder = "Введите ваше сообщения" rows="10" cols="45" required></textarea><br/>
+					<div id = "error"></div>
+					<input name = "button" id = "button" type = "button" value = "Отправить">
+				</form>
+			</div>
+		</div>	
+		<div id = "rightCol">
+			<div class = "baners">
+				<img src = "img/Baners/reklama.png" alt = "Реклама">
+			</div>
+			<div class = "baners">
+				<img src = "img/Baners/vasha-reklama.jpg" alt = "Реклама">
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div id = "social_network">
+				<a href = "http://vk.com" title = "Група ВК"  target = "_blank">
+				<img src = "img/SocialNetwork/vk.png" alt = "Група ВК" title = "Група ВК"> </a>
+				<a href = "http://facebook.com" title = "Група facebook"  target = "_blank">
+				<img src = "img/SocialNetwork/facebook.png" alt = "Група facebook" title = "Група facebook"> </a>
+				<a href = "http://twitter.com" title = "Група twitter"  target = "_blank">
+				<img src = "img/SocialNetwork/twitter.png" alt = "Група twitter" title = "Група twitter"> </a>
+			</div>
+			<div id = "rights_protection" >
+					Все права защищены &copy  
+					<script type = "text/javascript">
+					date = new Date();
+					document.write(date.getFullYear()); </script>  
+			</div>
+	</footer>
+</body>
+</html>

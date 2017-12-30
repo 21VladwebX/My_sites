@@ -1,0 +1,13 @@
+#block{
+	width: 40%;
+	height: 20%;
+	background: #4eabc2;
+	padding: 50% auto ;
+	margin: 5% auto ;
+}
+#block p{
+	width: auto;
+	padding: 50% auto ;
+	color: #3ed26a;
+	background: red;
+}

@@ -1,0 +1,263 @@
+@charset "utf-8";
+*{
+	 margin:0;
+	 padding:0;
+	 outline:none;
+ }
+html{
+	 height:100%;
+	 }
+ 
+body{
+	 width:100%;
+	 height:100%;
+	 background-color:#fff;
+	 color:#333;
+	font-family:"Segoe UI",Arial,sans-serif; 
+	 font-size:1em;
+	 line-height:135%;
+	 float:left;
+}
+img{
+	max-width:100%;
+	height:auto;
+	width:auto\9;/*треба для  Internet Explorer 8 */
+}
+a{
+	color:#d31484;  
+	text-decoration:none;
+}
+a:hover{
+	color:#efdea0;
+		
+}
+a,a:hover{
+	-webkit-transition:all.6s ease;
+	-moz-transition:all.6s ease;
+	-o-transition:all.6s ease;
+	-ms-transition:all.6s ease; 
+	transition:all.6s ease;
+}
+/*Стили для шапки */
+header{
+	width:98%;
+	float:left;
+	padding:1%;
+	background-color:#fafafa;
+	border-bottom:2px, solid, silver;
+	margin-bottom:20px;
+}
+header  #logo{
+	width:20%;
+	float:left;
+}
+header #logo a{
+	
+	color:#939393;
+	font-size:2em;
+	font-size:Times New Roman,sans-serif;
+}
+header  #menuHead{
+	width:45%;
+	float:left;
+}
+header  #regAuth{
+	width:30%;
+	float:left;
+	text-align:right;
+}
+header #menuHead div{
+	float:left;
+	padding:5px;
+	background-color:#c8c8c8;
+	border-radius:5px;
+	color:#ffffff;
+}
+header #menuHead div:hover{
+	background-color:#e7e7e7;
+}
+header #regAuth{
+	width:30%;
+	float:left;
+	text-align:right;
+	font-size:1.2em;	
+}
+/* Стили для всего документа */
+#wrapper{
+	width:80%;
+	margin-left:10%;
+	float:left;
+	
+}
+/*Стили для левой колонки*/
+@media (min-width: 800px){/*Спец тег для адаптивности сайта. Тут для гаджета с разрешением экрана больше чем 800px будут применьться стили в {}*/
+	#wrapper #leftCol{
+		width:70%;
+		float:left;
+		margin-right:10%;	
+	}
+}
+@media (max-width: 800px){/*Тут для гаджета с разрешением экрана меньше чем 799px или равно 799px, будут применьться стили в {}*/
+	#wrapper #leftCol{
+		width:70%;
+		float:left;
+		margin-right:10%;	
+	}
+}
+#wrapper #leftCol #bigArticle{
+	width:78%;
+	margin-left:10%;
+	background-color:#f6f6f6;
+	padding:1%;
+	float:left;	
+}
+#wrapper #leftCol #bigArticle img,#wrapper #leftCol .article{
+	width:100%;
+	float:left;	
+	margin-bottom:10px;
+}
+#wrapper #leftCol #bigArticle h2,#wrapper #leftCol .article h2{
+	font-size:1.3em;
+	font-weight:normal;
+	color:#9a9a9a;
+	font-family:Comic Sans MS, sans-serif;
+}
+#wrapper #leftCol #bigArticle p,#wrapper #leftCol .article p {
+	width:90%;
+	margin-left:5%;
+
+}
+	
+#wrapper #leftCol #bigArticle div.more,#wrapper #leftCol .article div.more{
+	padding:5px;
+	border-radius:5px;
+	background-color:#878787;
+	color:#fff;
+	width:10%;
+	text-align:center;
+	margin-top:10px;
+	float:left;
+	
+}
+
+/* #wrapper #leftCol .article div.more,#wrapper #leftCol #bigArticle div.more{
+	width:20%;
+	display:inline;
+} */
+#wrapper #leftCol .article div.more{
+	width:20%;
+}
+#wrapper #leftCol #bigArticle div.more:hover,#wrapper #leftCol .article div.more:hover{
+	background-color:#356f65;
+}
+#wrapper #leftCol .article{
+	width:40%;
+	margin-left:5%;
+	background-color:#f6f6f6;
+	padding:1%;
+	float:left;
+}
+/*Стили для странички о нас*/
+#wrapper #leftCol #about_us{
+	width:76%;
+	margin-left:10%;
+	border:1px solid silver;
+	background-color:#f4f4f4;
+	padding:2%;
+	
+	
+}
+/*Стили для стринички Обратгая сввязь */
+#wrapper #leftCol input{
+	width:40%;
+	margin-left:30%;
+	float:left;
+	border-radius:5px;
+	border:2px solid silver;
+	padding:5px;
+	color:#afebf8;
+	margin-bottom:10px;
+	font-size:1.2em;
+}
+#wrapper #leftCol input:hover,#wrapper #leftCol textarea:hover{
+	border:2px solid #f78080;
+}
+#wrapper #leftCol #done:hover{
+	border:2px solid #f8d881;
+	cursor:pointer;
+}
+
+#wrapper #leftCol textarea{
+	width:50%;
+	height:150px;
+	margin-left:25%;
+	float:left;
+	border-radius:5px;
+	border:2px solid silver;
+	padding:5px;
+	color:#afebf8;
+	margin-bottom:10px;
+	font-size:1.2em;
+	resize:none;
+	
+}
+#wrapper #leftCol #messageShow{
+	font-size:1.2em;
+	float:left;
+	color:red;
+	width:100%;
+	text-align:center;
+	
+}
+
+/*Стили для правой колонки*/
+@media (min-width: 800px){
+	#wrapper #rightCol{
+		width:20%;
+		float:left;
+	}
+}
+@media (max-width: 800px){
+	#wrapper #rightCol{
+		width:80%;
+		margin-left:5%;
+		float:left;
+	}
+}
+#wrapper #rightCol .banner{
+	width:100%;
+	float:left;
+	margin-bottom:20px;
+	border:1px solid silver;
+	box-sizing:border-box;
+}
+
+/*Стили для footer */
+
+footer{
+	width:98%;
+	padding:1%;
+	float:left;
+	background-color:#fafafa;
+	border-top: 2px solid silver;
+	margin-top:10px;
+}
+footer #social{
+	width:50%;
+	float:left;	
+
+}
+footer #social img{
+	width:30px;
+	height:30px;
+	float:left;
+	margin-right:5px;
+	
+}
+footer #rights{
+	width:50%;
+	float:right;
+	font-size:1.1em;	
+	text-align:right;
+}
+
